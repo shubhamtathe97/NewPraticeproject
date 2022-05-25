@@ -33,6 +33,13 @@ public class SamplePageTest {
 		radioBtn.click();
 		Assert.assertEquals("Radio button doesn't get clicked", true,radioBtn.isSelected());
 	}
+	
+	@Test
+	public void DummyTesting_1() {
+		WebElement radioBtn = driver.findElement(By.xpath("//input[@value='radio2']"));
+		radioBtn.click();
+		Assert.assertEquals("Radio button doesn't get clicked", true,radioBtn.isSelected());
+	}
 	//Test2
 	@Test
 	public void dropDownSelect() {
